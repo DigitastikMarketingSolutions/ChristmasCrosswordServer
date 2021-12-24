@@ -25,7 +25,7 @@ const handler = async (req, res) => {
                     });
             } else {
                 console.log("user-exists")
-                res.status(201).json({ messageCode: "user-exists" });
+                res.status(201).json({ messageCode: "user-exists", data: doc});
             }
 
         } else {
